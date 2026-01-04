@@ -47,14 +47,16 @@
 ## 아키텍처
 ### 소프트웨어 아키텍처
 
-![소프트웨어 아키텍처](https://private-user-images.githubusercontent.com/138632648/531698557-ddde2cfa-3ded-472f-876b-929153f18d4c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njc1MDU1MzQsIm5iZiI6MTc2NzUwNTIzNCwicGF0aCI6Ii8xMzg2MzI2NDgvNTMxNjk4NTU3LWRkZGUyY2ZhLTNkZWQtNDcyZi04NzZiLTkyOTE1M2YxOGQ0Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMTA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDEwNFQwNTQwMzRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNjlmZmFiYzdjYmE5ZmNiMmM3ZWQxYTgwNWY4OWNlM2Y2ZTYzOTUzNTE1ZmRjZTQ0OTkxODE0YzZiYTM2YjRkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.a2v0f468x5TIGXw1vKtZlRCDINE4ZNCOQ7x_wOE_e3A)
+<img width="1558" height="902" alt="Image" src="https://github.com/user-attachments/assets/17d9dcf1-be68-40db-ae42-e0e01744b81a" />
 본 시스템은 대학 동아리 관리 및 커뮤니티 기능을 제공하는 모놀리식 서비스 구조로 설계되어 있습니다. <br>
 Spring Boot 프레임워크를 기반으로 하며, MySQL을 주 데이터베이스로 사용하고 Redis를 캐시 및 세션 저장소로 활용합니다. <br>
 사용자 인증은 OAuth2(Kakao) 및 JWT를 통해 이루어지며, 파일 저장은 AWS S3를 이용합니다. <br>
 전체 시스템은 Docker Compose를 통해 컨테이너화되어 배포 및 관리가 용이하도록 구성되어 있습니다. <br>
 
 ### ERD
-![ERD](https://private-user-images.githubusercontent.com/138632648/531698772-3b38d60f-3404-4550-bff9-881290754925.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njc1MDU4MDMsIm5iZiI6MTc2NzUwNTUwMywicGF0aCI6Ii8xMzg2MzI2NDgvNTMxNjk4NzcyLTNiMzhkNjBmLTM0MDQtNDU1MC1iZmY5LTg4MTI5MDc1NDkyNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMTA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDEwNFQwNTQ1MDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05Y2NiOGRlYjZiNjgwOGYzZTg2ODc4MmI5Njc4ZDA3MTY0MGQxNDhmMGIzMTYwYTNlNjIwZmYyMTBkY2JmZWQyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.-LOqeSTquCcfARYTetxXra-o3UZoq9nVUT0HE8DthoY)
+<img width="3509" height="2352" alt="Image" src="https://github.com/user-attachments/assets/f665cf4a-f4b7-4398-8982-c5cb7b731501" />
+
+  
 
 | 도메인명               | 설명                                                     |
 | ------------------ | ------------------------------------------------------ |
@@ -68,7 +70,7 @@ Spring Boot 프레임워크를 기반으로 하며, MySQL을 주 데이터베이
 <br>
 
 ### 시스템 아키텍처
-![시스템 아키텍처](https://private-user-images.githubusercontent.com/138632648/531698815-7760cf10-0afc-44d2-a734-586e8bba6980.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njc1MDU4NzQsIm5iZiI6MTc2NzUwNTU3NCwicGF0aCI6Ii8xMzg2MzI2NDgvNTMxNjk4ODE1LTc3NjBjZjEwLTBhZmMtNDRkMi1hNzM0LTU4NmU4YmJhNjk4MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMTA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDEwNFQwNTQ2MTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZjgwZTY2NjgwMmZmZTk4MGQ5ZWMyZDJiNzA1Y2Q4NjY1ZTk1MTY2NzgxZTA2M2I1NzRiZDg5OTA1Yzk1YzdmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.0c39javhgOrasR4lu7R00L1LdqM1TD7tZ5Cf6k5Ztp8)
+<img width="3186" height="1464" alt="Image" src="https://github.com/user-attachments/assets/1879e595-9453-4446-b515-6e00c677a883" />
 
 단일 Spring Boot 애플리케이션이 모든 비즈니스 로직을 처리하며, MySQL과 Redis, AWS S3와 연동됩니다. <br>
 Docker Compose를 사용하여 애플리케이션과 데이터베이스, Redis를 통합 관리합니다. <br>
