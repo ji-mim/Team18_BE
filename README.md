@@ -98,6 +98,7 @@ Access Token 만료 시 재로그인이 반복되는 사용자 경험 저하와 
 <br>
 
 ## API URI Collection
+[Swagger 링크](https://dongarium.co.kr/swagger-ui/index.html)
 ### Auth  API
 | URI                                    | Method | 설명                |
 | -------------------------------------- | ------ | ----------------- |
