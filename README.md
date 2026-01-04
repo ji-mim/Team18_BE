@@ -127,7 +127,7 @@ Access Token 만료 시 재로그인이 반복되는 사용자 경험 저하와 
 | URI                                    | Method | 설명                |
 | -------------------------------------- | ------ | ----------------- |
 | `/api/clubs/{clubId}/apply`            | GET    | 지원서 양식 조회 (사용자용) |
-| `/api/clubs/{clubId}/dashboard/apply-form` | GET | 지원서 양식 조회 (관리자용) |
+| `/api/clubs/{clubId}/dashboard/apply-form` | GET | 지원서 양식 조회 (운영진용) |
 | `/api/clubs/{clubId}/dashboard/apply-form` | POST | 지원서 양식 저장         |
 | `/api/clubs/{clubId}/dashboard/apply-form` | PATCH | 지원서 양식 수정         |
 
